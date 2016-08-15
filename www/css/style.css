@@ -1,0 +1,78 @@
+/* Empty. Add your own CSS if you like */
+.Question
+{
+    color:#00A5D3;
+    font:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30pt;
+    font-style: bold;
+     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.Answer
+{
+    color:black;
+    font:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15pt;
+    font-style: bolder;
+    
+}
+
+
+
+.Affirmative
+{
+    color: white;
+    background: #00A5D3;
+    /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+.AppleWhite
+{
+    background:white;
+}
+.AppleWhite:active{
+    background:white;
+}
+
+.CapBlue
+{
+    background:#00A5D3;
+}
+
+.QuestionPosition
+{
+    position:relative;
+    top: 30pt;
+
+}
+
+.AffirmativePosition
+{
+    position:relative;
+    top:30pt;
+}
+
+.Logo
+{
+    position: absolute;
+    top: 400pt;
+    left: 650pt;
+}
+
+.Blockchain
+{
+    position: absolute;
+    top: 380pt;
+    left: 20pt;
+}
+
+#robot{
+    position: absolute;
+    top: 105px;
+    left: 200px;
+}
+
+p {
+    position:absolute;
+    top: 600px;
+}

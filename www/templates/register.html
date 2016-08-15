@@ -1,0 +1,25 @@
+
+<ion-view>
+    <ion-content>
+        <div class="col-md-6 marginLeft25 backgroundWhite">
+            <form class="form" name="registerForm" >
+                <div class="list">
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Email*</span> 
+                        <input type="email" name="emailName" id="emailid" placeholder="email@example.com" ng-model="email" required>
+                    </label>
+                </div>
+            </form>
+            
+            <div>
+            <button class="button Affirmative" ng-click="register(email); setButtonClicked('quizOne');">
+                AFFIRMATIVE
+            </button>
+            </div>
+                
+            <div>
+                <img id="robot" class=" AppleWhite" ng-src="../img/robotWithText.png" style="width: 600px; height: 500px" ></img>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

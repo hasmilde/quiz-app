@@ -1,0 +1,14 @@
+{
+  "name": "quizBlank",
+  "app_id": "a979659d",
+  "proxies": [
+    {
+      "path": "/blockchain/email/",
+      "proxyUrl": "http://localhost:2016/register"
+    },
+    {
+      "path": "/blockchain/answer/",
+      "proxyUrl": "http://localhost:2016/answer"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+<ion-view>
+    <ion-content>
+        <div class=" QuestionPosition">
+        <div >
+        <h2><b class="Question">{{state2.question}}</b></h2>
+        <ion-list>
+            <!--Make a loop-->
+            
+            <ion-radio icon="ion-star" ng-model="choice" ng-value="'A'" class="Answer">{{state2.answers[0]}}</ion-radio>
+            <ion-radio icon="ion-star" ng-model="choice" ng-value="'B'" class="Answer">{{state2.answers[1]}}</ion-radio>
+            <ion-radio icon="ion-star" ng-model="choice" ng-value="'C'" class="Answer">{{state2.answers[2]}}</ion-radio>
+            <ion-radio icon="ion-star" ng-model="choice" ng-value="'D'" ng-show="state2.answers[3] != null" class="Answer">{{state2.answers[3]}}</ion-radio>
+        </ion-list>
+        </div>
+
+        <div class="AffirmativePosition">
+        <button class="button Affirmative" ng-click="next(); confirm(choice)">
+            AFFIRMATIVE
+        </button>
+        </div>
+        </div>
+        <div>
+            <img class="Blockchain" ng-src="../img/blockchain.png" style="width: 800px; height: 150px"></img>
+        </div>
+       
+    </ion-content>
+</ion-view>
