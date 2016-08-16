@@ -17,9 +17,13 @@ ionic serve
 ####In folder with mongonode/ api (d:/iot/mongonode), git bash here:
 
 Npm install 
+
 Npm install body-parser 
+
 Npm-install mongoose 
+
 Npm-install mongodb 
+
 node index.js 
 
 ####Later: 
