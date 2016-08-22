@@ -1,20 +1,21 @@
 ###Documentatie IOT blochchain quiz.
 
-####Install ionic
+Install ionic
 
+#### mongodb aanzetten
 Mongodb bevind zich in map: d:/iotdata (die map eerst op de computer aanmaken als je die niet hebt, of een andere map maar dan ook volgende command aanpassen).
 
 Start mongodb door in de bin van mongo git bash here te doen, en daar het volgende command te typen:
 mongod --dbpath d:/iotdata
 
 
-####In folder with quiz (d:/iot/quiz), git bash here:
+####In folder with quiz (d:/quiz/quiz-app), git bash here:
 
 npm install
 
 ionic serve
 
-####In folder with mongonode/ api (d:/iot/mongonode), git bash here:
+####In folder with mongonode/ api (d:/quiz/mongonode-quiz-app), git bash here:
 
 Npm install 
 
