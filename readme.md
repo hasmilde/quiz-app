@@ -7,7 +7,8 @@ Mongodb bevind zich in map: d:/iotdata (die map eerst op de computer aanmaken al
 
 Start mongodb door in de bin van mongo git bash here te doen, en daar het volgende command te typen:
 mongod --dbpath d:/iotdata
-
+Als je de foutmelding krijgt dat hij mongod commando niet kent, probeer het volgende in plaats van bovenstaande regel:
+./mongod.exe --dbpath d:/iotdata
 
 ####In folder with quiz (d:/quiz/quiz-app), git bash here:
 
@@ -21,9 +22,9 @@ Npm install
 
 Npm install body-parser 
 
-Npm-install mongoose 
+Npm install mongoose 
 
-Npm-install mongodb 
+Npm install mongodb 
 
 node index.js 
 
