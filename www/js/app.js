@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic', 'starter.controllers.choiceCtrl', 'starter.controllers.navBarController', 'starter.controllers.registerController', 'starter.controllers.lastpageController', 'starter.services.choiceservice', 'starter.services.mongoservice', 'starter.services.lastpageservice'])
+angular.module('starter', ['ionic', 'starter.controllers.choiceCtrl', 'starter.controllers.quizController', 'starter.controllers.navBarController', 'starter.controllers.registerController', 'starter.controllers.lastpageController', 'starter.services.choiceservice', 'starter.services.mongoservice', 'starter.services.lastpageservice'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -83,6 +83,11 @@ angular.module('starter', ['ionic', 'starter.controllers.choiceCtrl', 'starter.c
         url: '/lastpage',
         templateUrl:'templates/lastpage.html',
         controller:'lastpageController'
+    })
+    .state('admin', {
+        url: '/select-questions',
+        templateUrl:'templates/select-questions.html',
+        controller:'quizController'
     })
 
     $urlRouterProvider.otherwise('/register')
