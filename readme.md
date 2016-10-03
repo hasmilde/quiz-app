@@ -1,33 +1,38 @@
-###Documentatie IOT blochchain quiz.
+=== Documentation OIT Blockchain Quiz ===
 
-Install ionic
 
-#### mongodb aanzetten
-Mongodb bevind zich in map: d:/iotdata (die map eerst op de computer aanmaken als je die niet hebt, of een andere map maar dan ook volgende command aanpassen).
+<!-- first time installation -->
 
-Start mongodb door in de bin van mongo git bash here te doen, en daar het volgende command te typen:
-mongod --dbpath d:/iotdata
-Als je de foutmelding krijgt dat hij mongod commando niet kent, probeer het volgende in plaats van bovenstaande regel:
-./mongod.exe --dbpath d:/iotdata
+1. clone the following git repositories
+	* mongonode-quiz-app (https://github.com/hasmilde/mongonode-quiz-app.git)
+	* quiz-app (https://github.com/hasmilde/quiz-app.git)
 
-####In folder with quiz (d:/quiz/quiz-app), git bash here:
+2. In /mongonode-quiz-app
+	* npm i
+	* npm install body-parser
+	* npm install mongoose
+	* npm install mongodb
 
-npm install
+3. In /quiz-app
+	* npm i
 
-ionic serve
 
-####In folder with mongonode/ api (d:/quiz/mongonode-quiz-app), git bash here:
+<!-- Start application -->
 
-Npm install 
+// start-up mongodb
+1. Git Bash in folder you have installed mongodb (e.g. C:\Program Files\MongoDB\Server\3.2\bin)
+   command: mongod --dbpath D:/path/to/store/quiz-app/data
 
-Npm install body-parser 
+// listen to server
+2. Git Bash in mongonode-quiz-app/
+   command: node index.js
 
-Npm install mongoose 
+// run application
+3. Git Bash in quiz-app/
+   command: ionic serve
 
-Npm install mongodb 
+In order to fill the server with data, fill-out the quiz once (or twice).
+View data with mongoChef for example
 
-node index.js 
-
-####Later: 
-In folder with resultscreen (d:/iot/resulrscreen/resultscreen), git bash here:
-http-server
+(in the future: In folder with resultscreen (d:/iot/resulrscreen/resultscreen), git bash here:
+http-server)
