@@ -1,9 +1,9 @@
-angular.module('starter.services.quizservice', [])
+angular.module('starter.services.quizService', [])
 
-.factory('quizservice', function($state, $q, $log, $http){
+.factory('quizService', function($state, $q, $log, $http){
     return{
         getQuestions: function(){
-        
+
         }
     }
 });
