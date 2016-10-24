@@ -123,7 +123,7 @@ Which character was a previous incarnation of the One? (The Matrix)
 A.  The Architect
 B.  The Keymaker
 c.  The Merovingian
-D.  Seraph
+D.  None of the Above [CORRECT]
 
 
 Question 12
@@ -140,3 +140,51 @@ A.  Mace Windu
 B.  Luke Skywalker 
 c.  Obi Wan Kenobi 
 D.  Anakin Skywalker [CORRECT]
+
+
+Question 14
+What is the output?
+public class codeHero {
+public static void main(String[] args) {
+String superHero = new String("Batman and Ironman");
+String whatIsJava = new String(" java rules");
+String codeHero;
+codeHero = superHero.substring(1, 7) + whatIsJava.toUpperCase().trim().substring(1, 5);
+System.out.println(codeHero);
+}
+}
+A. Batman JAVA
+B. atman AVA [CORRECT]
+C. atman JAVA
+D. none of the above
+
+
+Question 15
+In which city is the train headed in the movie Source Code (2011)?
+A. Detroit
+B. Seattle
+C. Chicago [CORRECT]
+D. New York
+
+
+Question 16
+In the Movie Ex Machina (2015), which test is refered to testing the intelligence of Ava?
+A. IQ Test
+B. Chineese Room
+C. Einstein Test
+D. Turing Test [CORRECT]
+
+
+Question 17
+Which tech company is portraited in the movie the Intenrship (2013)
+A. Google [CORRECT]
+B. Facebook
+C. Apple
+D. Capgemini
+
+Question 18
+The iPod introduction is seen in the which of the folowing feature films about Steve Jobs?
+A. Steve Jobs (2015)
+B. Jobs (2013) [CORRECT]
+C. iSteve (2013)
+D. Pirates of Silicon Valley (1999)
