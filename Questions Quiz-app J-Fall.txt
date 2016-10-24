@@ -1,0 +1,142 @@
+Questions Capgemini Quiz-app J-Fall 2016
+
+Question 1
+Consider the following code:  
+
+public class Conversion{    
+  public static void main(String[] args){
+    int i = 1234567890;
+    float f = i;      
+    System.out.println(i - (int)f);    
+  }
+}
+
+A.  It will print 0. [CORRECT]
+B.  It will not print 0.
+C.  It will not compile.
+D.  It will throw an exception at runtime.
+
+Explanation
+Actually it prints -46. This is because the information was lost during the conversion 
+from type int to type float as values of type float are not precise to nine significant 
+digits. 
+Note: You are not required to know the number of significant digits that can be stored by 
+a float for the exam. However, it is good to know about loss of precision while using float
+and double.
+
+
+Question 2
+Which of the following statements is/are true?
+
+A.  Subclasses must define all the abstract methods that the superclass defines.
+B.  A class implementing an interface must define all the methods of that interface.
+C.  A class cannot override the super class's constructor. [CORRECT]
+D.  An interface can implement multiple interfaces.
+
+Explanation
+A.  Not if the subclass is also defined abstract!
+B.  Not if the class is defined abstract. Further, Java 8 allows an interface to have 
+    default and static methods, which need not be implemented by a non-abstract class that 
+    says it implements that interface.
+C.  Because constructors are not inherited.
+D.  Interface cannot "implement" another interfaces. It can extend multiple interfaces.
+    The following is a valid declaration :interface I1 extends I2, I3, I4 { }
+    
+    
+Question 3
+Which of the following statements are correct regarding a functional interface?
+
+A.  It has exactly one method and it must be abstract.
+B.  It has exactly one method and it may or may not be abstract.
+C.  It must have exactly one abstract method and may have other default or static methods. [CORRECT]
+D.  It must have exactly one static method and may have other default or abstract methods.
+
+
+Question 4
+Which of the following is illegal?
+A.  char c = 320;
+B.  float f = 320;
+C.  double d = 320;
+D.  byte b = 320; [CORRECT]
+
+Explanation
+A.  This is valid because 320 is below the maximum value that a char can take, 
+    which is 2^16 -1. Remember that char can take only positive values.
+B.  320 is an int and any valid int can be assigned to a float or a double variable 
+    without a cast. Note that f = 320.0 is not valid as 320.0 would be a double and a 
+    double can only be assigned to a double without a cast.
+C.  This is valid because any valid int can be assigned to a double or even a float 
+    without any cast.
+D.  320 cannot fit into a byte so you must cast it.: byte b = (byte) 320;
+
+
+Questoin 5
+When and with whom does Andy (Steve Carrell) finally have sex in The 40-Year-Old Virgin?
+A.  On his 20th date with Beth
+B.  On his 20th date with Trish
+C.  At Beth’s apartment, after Jay’s party
+D.  On his wedding night with Trish [CORRECT]
+
+
+Question 6
+What name and state does Fogell adopt in Superbad, and who is he pursuing?
+A.  McLovin, Jamaica, Nicola
+B.  McMuffin, Hawaii, Nicola
+C.  McDonald, Texas, Becca
+D.  McLovin, Hawaii, Nicola [CORRECT]
+
+
+Question 7
+For what project did Slartibartfast win an award in The Hitchhiker’s Guide to the Galaxy?
+A.  Rebuilding the new version of Earth
+B.  Planning the spaceship Heart of Gold as a tennis shoe
+c.  Designing the fjords on the coast of Norway [CORRECT]
+D.  Creating the super-computer Deep Thought
+
+
+Question 8
+Who does Robert Carradine’s character in Revenge of the Nerds have a crush on?
+A.  Judy
+B.  Betty [CORRECT]
+c.  Julia
+D.  Michelle
+
+
+Question 9
+“Oh my god, they killed Kenny!” In which season/s of South Park did Kenny NOT die? And what was the reason for his last death (as of end of March 2009)?
+A.  Season 10; terrorists
+B.  Seasons 6 & 12; boomerang sliced his face in half
+c.  Seasons 10 & 12; syphilis [CORRECT]
+D.  Season 12; shot in the head by a stray bullet
+
+
+Question 10
+Which spaceship model was used by the Rebel Alliance to destroy the galactic empire’s first Death Star in Star Wars?
+A.  Y-wing Starfighter
+B.  TIE Interceptor
+C.  V-19 Torrent Starfighter
+D.  X-wing Starfighter [CORRECT]
+
+
+Question 11
+Which character was a previous incarnation of the One? (The Matrix)
+A.  The Architect
+B.  The Keymaker
+c.  The Merovingian
+D.  Seraph
+
+
+Question 12
+Who created the Matrix?
+A.  Agent Smith
+B.  The Oracle
+c.  The Architect [CORRECT]
+D.  The Keymaker
+
+
+Question 13
+What Jedi became Darth Vader?
+A.  Mace Windu
+B.  Luke Skywalker 
+c.  Obi Wan Kenobi 
+D.  Anakin Skywalker [CORRECT]
