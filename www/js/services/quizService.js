@@ -1,8 +1,8 @@
 angular.module('starter.services.quizService', [])
+	.factory('quizService', function($state, $q, $log, $http){
 
-.factory('quizService', function($state, $q, $log, $http){
     return{
-        getQuestionsByAdmin: function(){
+        getQuestions: function(){
 
         }
     }

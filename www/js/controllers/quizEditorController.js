@@ -2,11 +2,11 @@
 	'use strict';
 
 	angular
-		.module('starter.controllers.quizController', [])
-		.controller('quizController', quizController);
+		.module('starter.controllers.quizEditorController', [])
+		.controller('quizEditorController', quizEditorController);
 
 
-	function quizController($scope, $state, quizService, mongoservice, logger) {
+	function quizEditorController($scope, $state, quizService, mongoservice) {
 		var self = this;
 		self.questions = [];
 		self.title = 'Questions';
@@ -16,7 +16,6 @@
 		function activate() {
 			return quizService.getQuestions().then(function(res) {
 				$scope.questions = res;
-				logger.info('Activated questions view');
 			})
 		}
 	}

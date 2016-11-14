@@ -6,7 +6,7 @@
 angular.module('starter', [
   'ionic',
   'starter.controllers.choiceCtrl',
-  'starter.controllers.quizController',
+  'starter.controllers.quizEditorController',
   'starter.controllers.navBarController',
   'starter.controllers.registerController',
   'starter.controllers.lastpageController',
@@ -38,7 +38,8 @@ angular.module('starter', [
 .config(function($stateProvider, $urlRouterProvider, $httpProvider, $ionicConfigProvider){
 
     $ionicConfigProvider.views.maxCache(0);
-  $stateProvider
+    
+    $stateProvider
     // .state('quiz', {
     //   url: '/quiz',
     //   abstract:true,
@@ -46,18 +47,14 @@ angular.module('starter', [
     //   templateUrl: 'templates/blockchain.html'
     // })
     .state('state0', {
-      url: '/register',
-
+        url: '/register',
         templateUrl:'templates/register.html',
         controller:'registerController'
-
     })
     .state('state1', {
-      url: '/quizOne',
-
+        url: '/quizOne',
         templateUrl:'templates/choice.html',
         controller:'choiceCtrl'
-
     })
     .state('state2', {
         url: '/quizTwo',
@@ -95,9 +92,9 @@ angular.module('starter', [
         controller:'lastpageController'
     })
     .state('admin', {
-        url: '/select-questions',
-        templateUrl:'templates/select-questions.html',
-        controller:'quizController'
+        url: '/quiz-editor',
+        templateUrl:'templates/quiz-editor.html',
+        controller:'quizEditorController'
     })
 
     $urlRouterProvider.otherwise('/register')
