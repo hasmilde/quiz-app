@@ -1,14 +1,13 @@
 <ion-view>
     <ion-content>
-        <div class="col-md-6 marginLeft25 backgroundWhite">
-            Pick 7 questions from the list
+        <div class="container">
+            <div class="row">
+                <div ng-controller="quizEditorController as quizEditorCtrl">
+                    <p ng-repeat="question in quizEditorCtrl.questions">
+                        {{question}}
+                    </p>
+                </div>
+            </div>
         </div>
-        
-         <div>
-                <li ng-repeat="question in questions">
-                   <ul> {question} </ul>
-               </li>
-         </div>
-        
     </ion-content>
 </ion-view>

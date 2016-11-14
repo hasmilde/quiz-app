@@ -1,9 +1,20 @@
-angular.module('starter.services.quizEditorService', [])
-	.factory('quizEditorService', function($state, $q, $log, $http){
+(function() {
+    'use strict';
 
-    return{
-        getQuestions: function(){
+    angular
+	.module('starter.services.quizEditorService', [])
+	.factory('quizEditorService', quizEditorService);
 
+	function quizEditorService($state, $q, $log, $http) {
+		
+		var service = {
+			getQuestions: getQuestions
+		};
+
+		return service;
+
+        function getQuestions() {
+        	return $http.get('data/questions.json')
         }
     }
-});
+})();

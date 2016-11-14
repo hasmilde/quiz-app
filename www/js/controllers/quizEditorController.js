@@ -15,6 +15,7 @@
 
 		function activate() {
 			return quizEditorService.getQuestions().then(function(res) {
+				console.log(res);
 				$scope.questions = res;
 			})
 		}
