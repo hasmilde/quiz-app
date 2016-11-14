@@ -6,7 +6,7 @@
 		.controller('quizEditorController', quizEditorController);
 
 
-	function quizEditorController($scope, $state, quizService, mongoservice) {
+	function quizEditorController($scope, $state, quizEditorService, mongoservice) {
 		var self = this;
 		self.questions = [];
 		self.title = 'Questions';
@@ -14,7 +14,7 @@
 		activate();
 
 		function activate() {
-			return quizService.getQuestions().then(function(res) {
+			return quizEditorService.getQuestions().then(function(res) {
 				$scope.questions = res;
 			})
 		}

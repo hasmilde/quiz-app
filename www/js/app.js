@@ -13,7 +13,7 @@ angular.module('starter', [
   'starter.services.choiceservice',
   'starter.services.mongoservice',
   'starter.services.lastpageservice',
-  'starter.services.quizService'])
+  'starter.services.quizEditorService'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
